@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>আমার অর্ডার | UBD TOPUP</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="account.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img class="logo" src="logo.svg" alt=""><span>UBD TOPUP</span></a>
+    <button class="btn small ghost" id="logoutBtn" type="button" hidden>লগআউট</button>
+  </header>
+
+  <main class="wrap">
+    <h1 class="page-title">আমার অর্ডার</h1>
+    <p class="muted">অর্ডারের অবস্থা: অপেক্ষমাণ মানে যাচাই চলছে, সম্পন্ন মানে ডেলিভারি হয়ে গেছে।</p>
+
+    <p id="notice" class="panel" hidden></p>
+    <div id="gate" class="panel" hidden>
+      <p>অর্ডার দেখতে আগে লগইন করুন।</p>
+      <p class="links"><a class="btn" href="login.html">লগইন</a></p>
+    </div>
+
+    <div class="toolbar" id="bar" hidden>
+      <span></span>
+      <button class="btn small" id="reloadBtn" type="button">রিফ্রেশ</button>
+    </div>
+    <p id="listMsg" class="form-msg" role="status"></p>
+    <ul id="orders" class="orders"></ul>
+    <p style="margin: 2rem 0"><a href="index.html">← নতুন অর্ডার করুন</a></p>
+  </main>
+
+  <script src="firebase-config.js"></script>
+  <script src="db.js"></script>
+  <script src="orders.js"></script>
+</body>
+</html>

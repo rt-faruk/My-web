@@ -1,0 +1,6 @@
+.auth-wrap { max-width: 26rem; margin: 2.5rem auto; }
+.auth-wrap h1 { font-size: 1.6rem; margin-bottom: .75rem; }
+.switch { margin-top: 1rem; text-align: center; color: var(--muted); }
+.link-btn { background: none; border: 0; color: var(--accent); font: inherit; cursor: pointer; text-decoration: underline; padding: 0; }
+.back { display: inline-block; margin-bottom: 1rem; }
+.page-title { font-size: 1.6rem; margin: 1.5rem 0 .5rem; }

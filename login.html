@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>লগইন | UBD TOPUP</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="account.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img class="logo" src="logo.svg" alt=""><span>UBD TOPUP</span></a>
+  </header>
+
+  <main class="wrap">
+    <div class="auth-wrap">
+      <a class="back" href="index.html">← হোমে ফিরুন</a>
+      <p id="notice" class="panel" hidden></p>
+
+      <form id="authForm" class="panel" novalidate>
+        <h1 id="title">লগইন</h1>
+
+        <div id="nameRow" hidden>
+          <label for="name">আপনার নাম</label>
+          <input id="name" autocomplete="name">
+        </div>
+
+        <label for="email">ইমেইল</label>
+        <input id="email" type="email" autocomplete="username" required>
+
+        <label for="password">পাসওয়ার্ড</label>
+        <input id="password" type="password" autocomplete="current-password" required>
+
+        <p id="msg" class="form-msg" role="status"></p>
+        <button id="submitBtn" class="btn" type="submit">লগইন</button>
+
+        <p class="switch">
+          <span id="switchText">নতুন ইউজার?</span>
+          <button id="switchBtn" class="link-btn" type="button">অ্যাকাউন্ট খুলুন</button>
+        </p>
+        <p class="switch"><button id="resetBtn" class="link-btn" type="button">পাসওয়ার্ড ভুলে গেছেন?</button></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="firebase-config.js"></script>
+  <script src="db.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
